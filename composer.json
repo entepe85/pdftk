@@ -1,0 +1,9 @@
+{
+    "name": "eleggua999/pdftk",
+    "description": "PDFtk v1.44",
+    "keywords": ["pdftk"],
+    "homepage": "https://github.com/eleggua999/pdftk",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
