@@ -1,14 +1,15 @@
 {
-    "name": "nfq/pdftk",
+    "name": "eleggua999/pdftk",
     "description": "PDFtk v1.44",
     "keywords": ["pdftk"],
-    "homepage": "https://github.com/xxxx/pdftk",
+    "homepage": "https://github.com/eleggua999/pdftk",
     "require": {
         "php": ">=5.3.0"
     },
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "Eleggua\\Pdftk": "src/",
+            "": "src/Kohana/"
         }
     },
     "minimum-stability": "stable"
