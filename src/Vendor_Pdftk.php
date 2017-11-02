@@ -1,19 +1,6 @@
 <?php
-/**
- * @copyright C UAB NFQ Technologies 2015
- *
- * This Software is the property of NFQ Technologies
- * and is protected by copyright law – it is NOT Freeware.
- *
- * Any unauthorized use of this software without a valid license key
- * is a violation of the license agreement and will be prosecuted by
- * civil and criminal law.
- *
- * Contact UAB NFQ Technologies:
- * E-mail: info@nfq.lt
- * http://www.nfq.lt
- *
- */
+
+use Eleggua\Pdftk\Pdftk;
 
 /**
  * Class Vendor_Pdftk
@@ -50,5 +37,13 @@ class Vendor_Pdftk extends Pdftk
     protected function is_dev_env()
     {
         return KOHANA_ENV != ENV_DEVELOPMENT;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public static function get_instance($tmp = TMPPATH)
+    {
+        return new self($tmp);
     }
 }
