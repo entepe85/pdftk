@@ -50,14 +50,15 @@ class Pdftk
      */
     public function add_files($files, $append = false)
     {
-        foreach($files as $index => $file) {
+        foreach ($files as $index => $file) {
             $this->add_file($append?null:$index, $file);
         }
     }
 
     /**
      * @param string $index
-     * @param strign $filename
+     * @param string $filename
+     * @return Pdftk
      */
     public function add_file($index, $filename)
     {
@@ -232,6 +233,6 @@ class Pdftk
      */
     protected function get_binary_path()
     {
-        return dirname(__FILE__) . '/../../../bin/' . self::FILENAME;
+        return dirname(__FILE__) . '/../../bin/' . self::FILENAME;
     }
 }
