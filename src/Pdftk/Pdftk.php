@@ -152,7 +152,7 @@ class Pdftk
      * @return string
      * @throws \Exception
      */
-    protected function run_operation($operation, $out_filename = '')
+    public function run_operation($operation, $out_filename = '')
     {
         if (empty($out_filename)) {
             $out_filename = $this->generate_out_filename();
